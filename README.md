@@ -12,19 +12,11 @@ Some features that work out of the box are:
 * Example test coverage.
 
 # Local Source Install
-$ git clone https://github.com/suthakarkb/springbach-example.git
-
-$ mvn install
+$ git clone https://github.com/suthakarkb/springbatch-example.git
 
 # Use
-cd <directory> 
-mvn clean package
-
-Besides running the tests that will occur during the package phase, you can:
-
-1. Use the Maven assembled package:
-   * After running "mvn package" a file with the naming convention of "theArtifactId-version-distribution.tar.gz" will be located in the target/ directory of the project.
-   * Copy and extract this archive to a directory where you want to run the batch job and invoke via the ./bin/runJob.sh script. You may need to make this script executable (chmod +x ./bin/runJob.sh).
+1. cd <directory> 
+   mvn clean package
 
 2. Execute the job via Maven:
    * Run: mvn exec:java
