@@ -12,20 +12,13 @@ Some features that work out of the box are:
 * Example test coverage.
 
 # Local Source Install
-$ git clone https://github.com/chrisjs/maven-springbatch-archetype.git
-
-$ cd maven-springbatch-archetype
+$ git clone https://github.com/suthakarkb/springbach-example.git
 
 $ mvn install
 
 # Use
-mvn archetype:generate -DarchetypeGroupId=com.dtzq -DarchetypeArtifactId=maven-springbatch-archetype -DarchetypeVersion=1.3
-
-At the current time, the latest release version is 1.3
-
-Answer any questions and the build will end up in a directory named after your artifact ID.
-
-cd $artifactId ; mvn package
+cd <directory> 
+mvn clean package
 
 Besides running the tests that will occur during the package phase, you can:
 
